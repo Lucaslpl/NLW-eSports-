@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --gray: #a1a1aa;
+    --gray2: #2a2634;
+}
+
+a,
+ul,
+li {
+    text-transform: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-image: url(./Imagens/Fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #121214;
+    background-size: 100%;
+    color: var(--white);
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+main {
+    margin: auto;
+    max-width: 580px;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+header,
+main img,
+svg {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+header,
+main img:hover,
+svg:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+}
+
+section {
+    color: var(--white);
+    background: linear-gradient(
+        90deg,
+        #9572fc 0%,
+        #43e7ad 50.52%,
+        #e2d45c 100%
+    );
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section div {
+    background-color: var(--gray2);
+    padding: 2rem;
+    padding-top: 1.5rem;
+    border-radius: 8px;
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: var(--gray);
+}
+
+/* HEADER  */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.75rem 0px 2rem;
+}
+
+header img {
+    border: 0.25rem solid;
+    border-radius: 6rem;
+
+    background: linear-gradient(
+        90deg,
+        #9572fc 0%,
+        #43e7ad 50.52%,
+        #e2d45c 100%
+    );
+    border-image-source: linear-gradient(
+        90deg,
+        #9572fc 0%,
+        #43e7ad 50.52%,
+        #e2d45c 100%
+    );
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* ===========GAME LIST============ */
+
+.games__list img {
+    width: 5.625rem;
+    border-radius: 8px;
+}
+
+/* =======CHANNEL LIST======= */
+
+/* #channel__list_section {
+    height: 13.375rem;
+    width: 36.25rem;
+    padding: 1.5rem 2rem 2rem 2rem;
+    margin: 1.5rem 0 1.5rem;
+} */
+
+.channel__list img {
+    width: 70px;
+    border: 2px solid #443e54;
+
+    border-radius: 50%;
+}
+
+/* ==============REDES=SOCIAIS====== */
+
+/* #social__list__section {
+    height: 11rem;
+    width: 36.25rem;
+    padding: 1.5rem 2rem 2rem 2rem;
+} */
