@@ -93,6 +93,8 @@ header {
     align-items: center;
     justify-content: center;
     padding: 2.75rem 0px 2rem;
+    padding-top: 32px;
+    height: calc(120px + 32px);
 }
 
 header img {
@@ -131,13 +133,6 @@ section ul {
 
 /* =======CHANNEL LIST======= */
 
-/* #channel__list_section {
-    height: 13.375rem;
-    width: 36.25rem;
-    padding: 1.5rem 2rem 2rem 2rem;
-    margin: 1.5rem 0 1.5rem;
-} */
-
 .channel__list img {
     width: 70px;
     border: 2px solid #443e54;
@@ -147,8 +142,50 @@ section ul {
 
 /* ==============REDES=SOCIAIS====== */
 
-/* #social__list__section {
-    height: 11rem;
-    width: 36.25rem;
-    padding: 1.5rem 2rem 2rem 2rem;
-} */
+#social__list__section {
+    margin-bottom: 10px;
+}
+
+/* =====ANIMATION==== */
+
+header div {
+    animation: fromTop 0.7s 0.2s backwards;
+}
+
+main section {
+    animation: fromBottom 0.7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
+main section:nth-child(2) {
+    animation-delay: 0.3s;
+}
+main section:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
