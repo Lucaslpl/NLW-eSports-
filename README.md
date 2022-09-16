@@ -14,5 +14,5 @@ NLW da Rocketseat, projeto construído durante o evento Next Level Week da Rocke
 
 ## Contatos 💜
 
-lucasbereshit@gmail.com
-https://www.linkedin.com/in/lucas-pereira-luna007/
+-   lucasbereshit@gmail.com
+-   https://www.linkedin.com/in/lucas-pereira-luna007/
